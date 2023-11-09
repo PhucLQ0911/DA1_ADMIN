@@ -11,7 +11,7 @@
             <form id="validation-form">
               <div class="form-group">
                 <label class="form-label">User name</label>
-                <input type="text" class="form-control" name="validation-user-name" placeholder="User name">
+                <input type="text" class="form-control" name="validation-user-name" placeholder="User name" disabled>
               </div>
 
               <div class="form-group">
@@ -26,7 +26,7 @@
 
               <div class="form-group">
                 <label class="form-label">Email</label>
-                <input type="text" class="form-control" name="validation-user-email" placeholder="Email">
+                <input type="text" class="form-control" name="validation-user-email" placeholder="Email" disabled>
               </div>
 
 

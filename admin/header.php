@@ -3,9 +3,7 @@
     <i class="hamburger align-self-center"></i>
   </a>
 
-  <form class="form-inline d-none d-sm-inline-block">
-    <input class="form-control form-control-no-border mr-sm-2" type="text" placeholder="Search projects..." aria-label="Search" />
-  </form>
+
 
   <div class="navbar-collapse collapse">
     <ul class="navbar-nav ml-auto">
@@ -24,7 +22,7 @@
             <a href="#" class="list-group-item">
               <div class="row no-gutters align-items-center">
                 <div class="col-2">
-                  <img src="../img\avatars\avatar-5.jpg" class="avatar img-fluid rounded-circle" alt="Ashley Briggs" />
+                  <img src="./img\avatars\avatar-5.jpg" class="avatar img-fluid rounded-circle" alt="Ashley Briggs" />
                 </div>
                 <div class="col-10 pl-2">
                   <div class="text-dark">Ashley Briggs</div>
@@ -38,7 +36,7 @@
             <a href="#" class="list-group-item">
               <div class="row no-gutters align-items-center">
                 <div class="col-2">
-                  <img src="../img\avatars\avatar-2.jpg" class="avatar img-fluid rounded-circle" alt="Carl Jenkins" />
+                  <img src="./img\avatars\avatar-2.jpg" class="avatar img-fluid rounded-circle" alt="Carl Jenkins" />
                 </div>
                 <div class="col-10 pl-2">
                   <div class="text-dark">Carl Jenkins</div>
@@ -52,7 +50,7 @@
             <a href="#" class="list-group-item">
               <div class="row no-gutters align-items-center">
                 <div class="col-2">
-                  <img src="../img\avatars\avatar-4.jpg" class="avatar img-fluid rounded-circle" alt="Stacie Hall" />
+                  <img src="./img\avatars\avatar-4.jpg" class="avatar img-fluid rounded-circle" alt="Stacie Hall" />
                 </div>
                 <div class="col-10 pl-2">
                   <div class="text-dark">Stacie Hall</div>
@@ -66,7 +64,7 @@
             <a href="#" class="list-group-item">
               <div class="row no-gutters align-items-center">
                 <div class="col-2">
-                  <img src="../img\avatars\avatar-3.jpg" class="avatar img-fluid rounded-circle" alt="Bertha Martin" />
+                  <img src="./img\avatars\avatar-3.jpg" class="avatar img-fluid rounded-circle" alt="Bertha Martin" />
                 </div>
                 <div class="col-10 pl-2">
                   <div class="text-dark">Bertha Martin</div>
@@ -154,11 +152,11 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-flag dropdown-toggle" href="#" id="languageDropdown" data-toggle="dropdown">
-          <img src="../img\flags\us.png" alt="English" />
+          <img src="./img\flags\us.png" alt="English" />
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
           <a class="dropdown-item" href="#">
-            <img src="../img\flags\us.png" alt="English" width="20" class="align-middle mr-1" />
+            <img src="./img\flags\us.png" alt="English" width="20" class="align-middle mr-1" />
             <span class="align-middle">English</span>
           </a>
           <a class="dropdown-item" href="#">
@@ -166,11 +164,11 @@
             <span class="align-middle">Spanish</span>
           </a>
           <a class="dropdown-item" href="#">
-            <img src="../img\flags\de.png" alt="German" width="20" class="align-middle mr-1" />
+            <img src="./img\flags\de.png" alt="German" width="20" class="align-middle mr-1" />
             <span class="align-middle">German</span>
           </a>
           <a class="dropdown-item" href="#">
-            <img src="../img\flags\nl.png" alt="Dutch" width="20" class="align-middle mr-1" />
+            <img src="./img\flags\nl.png" alt="Dutch" width="20" class="align-middle mr-1" />
             <span class="align-middle">Dutch</span>
           </a>
         </div>
@@ -181,7 +179,7 @@
         </a>
 
         <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-toggle="dropdown">
-          <img src="../img\avatars\avatar.jpg" class="avatar img-fluid rounded-circle mr-1" alt="Chris Wood" />
+          <img src="./img\avatars\avatar.jpg" class="avatar img-fluid rounded-circle mr-1" alt="Chris Wood" />
           <span class="text-dark">Chris Wood</span>
         </a>
         <div class="dropdown-menu dropdown-menu-right">

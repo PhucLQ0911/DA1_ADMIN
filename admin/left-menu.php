@@ -88,7 +88,7 @@
     <!-- Account -->
     <div class="sidebar-bottom d-none d-lg-block">
       <div class="media">
-        <img class="rounded-circle mr-3" src="../img\avatars\avatar.jpg" alt="Chris Wood" width="40" height="40" />
+        <img class="rounded-circle mr-3" src="./img\avatars\avatar.jpg" alt="Chris Wood" width="40" height="40" />
         <div class="media-body">
           <h5 class="mb-1">Chris Wood</h5>
           <div><i class="fas fa-circle text-success"></i> Online</div>

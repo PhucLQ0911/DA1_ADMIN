@@ -12,12 +12,12 @@
   <link rel="preconnect" href="//fonts.gstatic.com/" crossorigin="" />
 
   <!-- PICK ONE OF THE STYLES BELOW -->
-  <link href="../css/classic.css" rel="stylesheet" />
+  <link href="./css/classic.css" rel="stylesheet" />
 </head>
 
 <body>
   <!-- Default setting -->
-  <script src="../js/app.js"></script>
+  <script src="./js/app.js"></script>
   <div class="wrapper">
     <!-- Left menu -->
     <?php include("left-menu.php") ?>
