@@ -96,16 +96,14 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Default modal</h5>
+        <h5 class="modal-title">Comment</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body m-3">
         <p class="mb-0">
-          Use Bootstrap’s JavaScript modal plugin to add
-          dialogs to your site for lightboxes, user
-          notifications, or completely custom content.
+          Do you want to delete comment ?
         </p>
       </div>
       <div class="modal-footer">
@@ -113,14 +111,12 @@
           Close
         </button>
         <a href="" class="btn btn-danger" id="btn-delete">
-          Save changes
+          Confirm
         </a>
       </div>
     </div>
   </div>
 </div>
-
-
 <script>
   $('.deleteComment').on('click', function() {
     var id = $(this).data('ds-id');

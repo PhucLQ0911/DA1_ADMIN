@@ -142,16 +142,14 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Confirm</h5>
+        <h5 class="modal-title">Order</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body m-3">
         <p class="mb-0">
-          Use Bootstrap’s JavaScript modal plugin to add
-          dialogs to your site for lightboxes, user
-          notifications, or completely custom content.
+          Do you want to confirm order ?
         </p>
       </div>
       <div class="modal-footer">
@@ -159,14 +157,12 @@
           Close
         </button>
         <a href="" class="btn btn-danger" id="btn-success">
-          Save changes
+          Confirm
         </a>
       </div>
     </div>
   </div>
 </div>
-
-
 <script>
   $('.confirmOrder').on('click', function() {
     var id = $(this).data('ds-id');
@@ -181,16 +177,14 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Refuse</h5>
+        <h5 class="modal-title">Order</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body m-3">
         <p class="mb-0">
-          Use Bootstrap’s JavaScript modal plugin to add
-          dialogs to your site for lightboxes, user
-          notifications, or completely custom content.
+          Do you want to refuse order ?
         </p>
       </div>
       <div class="modal-footer">
@@ -198,14 +192,12 @@
           Close
         </button>
         <a href="" class="btn btn-danger" id="btn-delete">
-          Save changes
+          Confirm
         </a>
       </div>
     </div>
   </div>
 </div>
-
-
 <script>
   $('.refuseOrder').on('click', function() {
     var id = $(this).data('ds-id');

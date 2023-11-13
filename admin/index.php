@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿<?php
+ob_start();
+?>
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -53,7 +57,7 @@
             include("product/list-product.php");
             break;
           case 'addProduct':
-            include("product/add-product.php");
+            include("product/add-productv1.php");
             break;
           case 'updateProduct':
             include("product/update-product.php");
@@ -106,3 +110,7 @@
 </body>
 
 </html>
+
+<?php
+ob_end_flush();
+?>

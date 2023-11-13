@@ -64,54 +64,20 @@
     // Initialize validation
     $("#validation-form").validate({
       rules: {
-        "validation-user-email": {
-          required: true,
-          email: true
-        },
-        "validation-user-password": {
-          required: true,
-          minlength: 6,
-          maxlength: 20
-        },
-        "validation-user-password-confirmation": {
-          required: true,
-          equalTo: "input[name=\"validation-password\"]"
-        },
-        "validation-user-name": {
-          required: true
-        },
         "validation-user-phone": {
           required: true,
           maxlength: 11
         },
         "validation-user-address": {
           required: true
-        },
-        "validation-user-file": {
-          required: true
         }
       },
       messages: {
-        "validation-user-email": {
-          required: "Do not leave the email blank."
-        },
-        "validation-user-password": {
-          required: "Do not leave the password blank.",
-        },
-        "validation-user-password-confirmation": {
-          required: "Do not leave the re-password blank."
-        },
-        "validation-user-name": {
-          required: "Do not leave the user name blank."
-        },
         "validation-user-phone": {
           required: "Do not leave the phone number blank."
         },
         "validation-user-address": {
           required: "Do not leave the address blank."
-        },
-        "validation-user-file": {
-          required: "Do not leave the image blank."
         }
       },
       // Errors

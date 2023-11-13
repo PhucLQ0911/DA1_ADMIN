@@ -8,7 +8,7 @@
             <h5 class="card-title mb-0">Category</h5>
           </div>
           <div class="card-body">
-            <form id="validation-form" method="post" action="?act=addCategory">
+            <form id="validation-form" method="post" action="" enctype="multipart/form-data">
               <div class="form-group">
                 <label class="form-label">Name category</label>
                 <input type="text" class="form-control" name="validation-category-name" placeholder="Name category">
@@ -21,7 +21,7 @@
               </div>
 
               <div class="d-flex mt-5 justify-content-center align-item-center">
-                <button type="submit" class="btn btn-lg btn-primary" id="toastr-show">
+                <button type="submit" class="btn btn-lg btn-primary" id="toastr-show" name="submit">
                   Add Category
                 </button>
               </div>
@@ -35,13 +35,15 @@
   </div>
 </main>
 
+
+<!-- Validate -->
 <script>
+  // Trigger validation on tagsinput change
+  $("input[name=\"validation-bs-tagsinput\"]").on("itemAdded itemRemoved", function() {
+    $(this).valid();
+  });
+
   $(function() {
-    // Trigger validation on tagsinput change
-    // $("input[name=\"validation-bs-tagsinput\"]").on("itemAdded itemRemoved", function() {
-    //   $(this).valid();
-    // });
-    // Initialize validation
     $("#validation-form").validate({
       rules: {
         "validation-category-name": {
@@ -84,27 +86,22 @@
 
 <!-- Show notification -->
 <script>
-  // Toastr
-  $(function() {
-    var currentMessageIndex = -1;
-    $('#toastr-show').click(function() {
-      var message = "Category";
-      var title = "Add category success";
-      var type = "success";
+  function showToast() {
+    var message = "Category";
+    var title = "Add category success";
+    var type = "success";
 
-      toastr[type](message, title, {
-        positionClass: 'toast-top-right',
-        closeButton: 'checked',
-        progressBar: 'checked',
-        newestOnTop: 'checked',
-        rtl: $('body').attr('dir') === 'rtl' ||
-          $('html').attr('dir') === 'rtl',
-        timeOut: 5000,
-      });
+    toastr[type](message, title, {
+      positionClass: 'toast-top-right',
+      closeButton: 'checked',
+      progressBar: 'checked',
+      newestOnTop: 'checked',
+      rtl: $('body').attr('dir') === 'rtl' || $('html').attr('dir') === 'rtl',
+      timeOut: 5000,
     });
+  }
 
-    $('#toastr-clear').on('click', function() {
-      toastr.clear();
-    });
-  });
+  function clearToast() {
+    toastr.clear();
+  }
 </script>

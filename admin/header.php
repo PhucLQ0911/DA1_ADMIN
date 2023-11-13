@@ -160,7 +160,7 @@
             <span class="align-middle">English</span>
           </a>
           <a class="dropdown-item" href="#">
-            <img src="../img\flags\es.png" alt="Spanish" width="20" class="align-middle mr-1" />
+            <img src="./img\flags\es.png" alt="Spanish" width="20" class="align-middle mr-1" />
             <span class="align-middle">Spanish</span>
           </a>
           <a class="dropdown-item" href="#">

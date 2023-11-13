@@ -32,7 +32,7 @@
                 <tr>
                   <td>1</td>
                   <td>Smartphone</td>
-                  <td><img src="" alt="...image cate"></td>
+                  <td><img src="" alt="...image cate" width="50px"></td>
                   <td>Hidden</td>
                   <td>
                     <div class="text-center">
@@ -100,21 +100,20 @@
   });
 </script>
 
+
 <!-- Confirm delete -->
 <div class="modal fade" id="defaultModalDanger" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Default modal</h5>
+        <h5 class="modal-title">Category</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body m-3">
         <p class="mb-0">
-          Use Bootstrap’s JavaScript modal plugin to add
-          dialogs to your site for lightboxes, user
-          notifications, or completely custom content.
+          Do you want to delete category ?
         </p>
       </div>
       <div class="modal-footer">
@@ -122,7 +121,7 @@
           Close
         </button>
         <a href="" class="btn btn-danger" id="btn-delete">
-          Save changes
+          Confirm
         </a>
       </div>
     </div>

@@ -36,22 +36,21 @@
 </main>
 
 <script>
+  // Trigger validation on tagsinput change
+  $("input[name=\"validation-bs-tagsinput\"]").on("itemAdded itemRemoved", function() {
+    $(this).valid();
+  });
+
   $(function() {
     $("#validation-form").validate({
       rules: {
         "validation-category-name": {
           required: true,
         },
-        "validation-category-file": {
-          required: true
-        }
       },
       messages: {
         "validation-category-name": {
           required: "Do not leave the name category blank."
-        },
-        "validation-category-file": {
-          required: "Do not leave the image category blank."
         }
       },
       // Errors
@@ -78,28 +77,24 @@
 </script>
 
 
+<!-- Show notification -->
 <script>
-  // Toastr
-  $(function() {
-    var currentMessageIndex = -1;
-    $('#toastr-show').click(function() {
-      var message = "Category";
-      var title = "Update category success";
-      var type = "success";
+  function showToast() {
+    var message = "Category";
+    var title = "Update category success";
+    var type = "success";
 
-      toastr[type](message, title, {
-        positionClass: 'toast-top-right',
-        closeButton: 'checked',
-        progressBar: 'checked',
-        newestOnTop: 'checked',
-        rtl: $('body').attr('dir') === 'rtl' ||
-          $('html').attr('dir') === 'rtl',
-        timeOut: 5000,
-      });
+    toastr[type](message, title, {
+      positionClass: 'toast-top-right',
+      closeButton: 'checked',
+      progressBar: 'checked',
+      newestOnTop: 'checked',
+      rtl: $('body').attr('dir') === 'rtl' || $('html').attr('dir') === 'rtl',
+      timeOut: 5000,
     });
+  }
 
-    $('#toastr-clear').on('click', function() {
-      toastr.clear();
-    });
-  });
+  function clearToast() {
+    toastr.clear();
+  }
 </script>
